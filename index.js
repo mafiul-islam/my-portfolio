@@ -2,11 +2,16 @@ const express = require('express')
 const mongoose = require('mongoose')
 
 const app = express();
-const DB = 'mongodb+srv://mafiul:mafiul123@cluster0.xxcey.mongodb.net/myprofile?retryWrites=true&w=majority'
+const DB = ''
 
-mongoose.connect(DB).then(() => {
+mongoose.connect(DB, {
+    useNewUrlParser : true,
+     //useCreateIndex : true,
+    useUnifiedTopology : true,
+    //useFindAndModify : false
+}).then(() => {
     console.log(`connection successful`);
-}).catch((error) => console.log(`Error connection`));
+}).catch((error) => console.log(`Error connection ${error}`));
 
 app.get('/', (req, resp) => {
     resp.send("application is running added to git...")
