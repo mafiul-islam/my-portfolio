@@ -1,1 +1,11 @@
 mongodb+srv://mafiul:<password>@cluster0.xxcey.mongodb.net/myFirstDatabase?retryWrites=true&w=majority
+
+{
+    "name": "mafiul",
+    "email": "mafiulislam.mi@gmail.com",
+    "phone": 01723168279,
+    "work": "Software Engineer",
+    "password": "mafiul123",
+    "cpassword": "mafiul123"
+
+}
